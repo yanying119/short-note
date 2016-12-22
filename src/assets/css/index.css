@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: 100%;
+}
+
+html, body, #app, #note {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.note {
+    width: 280px;
+    height: 303px;
+    border-radius: 5px;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px 30px 20px;
+    background: url(../images/notebg.png) no-repeat center top;
+    background-size: 100%;
+}
+
+.note_heading {
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.note textarea {
+    width: 100%;
+    outline: none;
+    height: 170px;
+    background: none;
+    border: 0;
+}
+
+.deletes {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 17px;
+    background: #fff;
+}
