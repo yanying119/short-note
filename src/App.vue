@@ -133,7 +133,12 @@ export default {
     }
 }
 </script>
+<style> 
 
-<style>
-
+body {
+    background: url(./assets/images/bg.jpg) no-repeat center center;
+}
+.note {
+    background: url(./assets/images/notebg.png) no-repeat center top;
+}
 </style>

@@ -4,7 +4,6 @@
 }
 
 body {
-    background: url(../images/bg.jpg) no-repeat center center;
     background-size: 100%;
 }
 
@@ -22,7 +21,6 @@ html, body, #app, #note {
     overflow-y: auto;
     overflow-x: hidden;
     padding: 10px 30px 20px;
-    background: url(../images/notebg.png) no-repeat center top;
     background-size: 100%;
 }
 
