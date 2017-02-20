@@ -97,10 +97,11 @@ export default {
             }
         },
         init:function(e){
+            var nodeImg = require("./assets/images/notebg.png");
             var note = document.getElementById('note'),
                 left = e.clientX,
                 top = e.clientY,
-                style  = "position:fixed;left:"+left+"px;top:"+top+"px";
+                style  = "position:fixed;left:"+left+"px;top:"+top+"px;background:url("+nodeImg+")";
 
             if (localStorage.noteCount){
                 this.noteCount = localStorage.getItem("noteCount");
@@ -113,7 +114,9 @@ export default {
         }
     },
     mounted:function(event){
-
+        var body = document.getElementsByTagName("body")[0];
+        var bodyImg = require("./assets/images/bg.jpg");
+            body.style.background = "url("+bodyImg+")";
         if(localStorage){
             for(var i = 0; i<localStorage.length;i++){
 
@@ -133,12 +136,3 @@ export default {
     }
 }
 </script>
-<style> 
-
-body {
-    background: url(./assets/images/bg.jpg) no-repeat center center;
-}
-.note {
-    background: url(./assets/images/notebg.png) no-repeat center top;
-}
-</style>
