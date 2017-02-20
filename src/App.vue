@@ -115,7 +115,6 @@ export default {
     mounted:function(event){
 
         if(localStorage){
-            console.log(localStorage.length);
             for(var i = 0; i<localStorage.length;i++){
 
                 if(/^data\d+$/.exec(localStorage.key(i))){
